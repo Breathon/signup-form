@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url('./images/bg-intro-desktop.png');
+    font-family: 'poppins';
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin:0rem 10rem;
+    margin-top: 5rem;
+    padding: 0 7rem;
+    width: 100vw;
+    max-height: 100vh;
+    text-align: center;
+}
+
+.container>div{
+    flex: 1;
+}
+
+.container .content{
+    text-align: left;
+    
+  
+}
+
+.container .content h1{
+    font-size: 3rem;
+    line-height: 3.5rem;
+   
+}
+
+.container .content p{
+    font-size: 1rem;
+    
+    margin-right: 2rem;    
+}
+
+
+.info .box-blue{
+    background-color: hsl(248, 32%, 49%);
+    width: 500px;
+    padding: 0.5px 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.info .box{
+    background-color: #fff;
+    width: 500px;
+    border-radius: 10px;
+    padding: 30px 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.15);
+}
+
+
+.info .box .form-control input{
+    width: 100%;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    padding: 15px;
+    margin-bottom: -35px;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    
+}
+
+.info .box .form-control.error input{
+    margin-bottom: 10px;
+}
+
+.info .box .form-control input:focus{
+    border: 1px solid hsl(249, 10%, 26%) ;
+    
+    outline: none;
+}
+
+.info .box .form-control input::placeholder{
+    font-weight: bold;
+    padding:10px;
+} 
+
+.info .box .form-control img{
+    width: 18px;
+    position: absolute;
+    right: 10px;
+    top: 17px;
+    opacity: 0;
+}
+
+.info .box .form-control.error img{
+     opacity: 1;
+}
+
+
+.info .box .form-control{
+    position: relative;
+    margin-bottom:30px ;
+}
+
+ .info .box .form-control small{
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    opacity: 0;
+    text-align: right;
+    color:  hsl(0, 100%, 74%) ;
+    font-style: italic; 
+    font-weight: bold;
+} 
+
+.info .box .form-control.error  input {
+    border-color: hsl(0, 100%, 74%) ;
+    color: hsl(0, 100%, 74%) ;
+}
+
+
+button{
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: 0 2px hsl(154, 59%, 51%);
+    width: 100%;
+    font-family: 'poppins';
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid hsl(154, 59%, 51%);
+    cursor: pointer;
+    outline: none;
+}
+
+button:active{
+    box-shadow: 0 0 hsl(154, 59%, 51%);
+    transform: translateY(2px);
+}
+
+.info .box small{
+    color: #aaa;
+    font-size: .6rem;
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.info .box small a{
+    color:hsl(0, 100%, 74%) ;
+    text-decoration: none;
+}
+
+footer{
+    margin-top: 6rem;
+}
+
+
+/* mobile responsiveness */
+
+@media screen and (max-width:980px){
+    body{
+        margin: 0;
+        padding: 0;
+        
+        background-image: url('./images/bg-intro-mobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+    }
+    .container{
+        
+        display: inline-block;
+        margin:auto;
+        text-align: center;
+    }
+
+    .container .content{
+        margin: auto;
+        text-align: center;
+    }
+
+    .container .content h1{
+        font-size: 1.7rem;
+        padding-top: 8rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        line-height: normal;
+        text-align: center;
+       
+    }
+
+    .container .content p{
+        font-size: 0.9rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+      
+    .info .box-blue{
+        background-color: hsl(248, 32%, 49%);
+        box-shadow: 0 5px rgba(0, 0, 0, 0.15);
+        width: 85%;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 15px;
+        padding: .3rem 3rem;  
+        font-size: 1rem;  
+    }
+
+    .info .box{
+        width: 85%;
+        margin: auto;
+        padding-left:1.5rem ;
+        padding-right: 1.5rem;
+        box-shadow: 0 5px rgba(0, 0, 0, 0.15);
+    }
+
+    
+.info .box small{
+    
+    margin: auto;
+  
+   text-align: center;
+}
+
+footer{
+    margin-top: 3rem;
+}
+}
